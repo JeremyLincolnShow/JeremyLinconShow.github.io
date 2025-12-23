@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodes - The Jeremy Lincoln Show</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pub-dark': '#2C1810',
+                        'pub-brown': '#3E2723',
+                        'pub-medium': '#5D4037',
+                        'beer-amber': '#F9A825',
+                        'beer-gold': '#FDD835',
+                        'cream': '#FFF8E1',
+                        'off-white': '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="bg-cream">
+    <!-- Navigation -->
+    <nav class="bg-pub-dark sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="The Jeremy Lincoln Show" class="h-12 w-auto">
+                    <span class="text-cream text-xl font-semibold hidden sm:block">The Jeremy Lincoln Show</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors">About</a></li>
+                    <li><a href="episodes.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors border-b-2 border-beer-gold">Episodes</a></li>
+                    <li><a href="contact.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden hamburger flex flex-col space-y-1.5 p-2">
+                    <span class="block w-8 h-0.5 bg-cream"></span>
+                    <span class="block w-8 h-0.5 bg-cream"></span>
+                    <span class="block w-8 h-0.5 bg-cream"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden nav-menu hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-pub-dark">
+                <a href="index.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="episodes.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium border-l-4 border-beer-gold">Episodes</a>
+                <a href="contact.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="bg-gradient-to-br from-pub-medium to-pub-brown py-16 text-center text-cream">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Episodes</h1>
+            <p class="text-xl text-beer-gold italic">Explore our latest conversations and brewing stories</p>
+        </div>
+    </section>
+
+    <!-- Episodes List -->
+    <section class="py-16 md:py-24 bg-off-white">
+        <div class="max-w-5xl mx-auto px-4 space-y-12">
+            
+            <!-- Episode 1 - EXAMPLE -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-beer-amber">
+                <div class="p-6 md:p-8">
+                    <div class="mb-4">
+                        <h2 class="text-2xl md:text-3xl font-bold text-pub-brown mb-2">Episode Title Goes Here</h2>
+                        <p class="text-pub-medium italic">December 23, 2024</p>
+                    </div>
+                    
+                    <p class="text-lg mb-6 leading-relaxed">Episode description goes here. Talk about what was discussed, who the guest was, and key takeaways from the conversation.</p>
+                    
+                    <!-- YouTube Embed -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-pub-medium mb-3">Watch on YouTube</h3>
+                        <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
+                            <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+                            <iframe class="absolute top-0 left-0 w-full h-full" 
+                                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Spotify Embed -->
+                    <div>
+                        <h3 class="text-xl font-bold text-pub-medium mb-3">Listen on Spotify</h3>
+                        <div class="rounded-xl overflow-hidden">
+                            <!-- Replace EPISODE_ID with your actual Spotify episode ID -->
+                            <iframe class="w-full h-[152px]" 
+                                    src="https://open.spotify.com/embed/episode/EPISODE_ID" 
+                                    frameborder="0" 
+                                    allowtransparency="true" 
+                                    allow="encrypted-media">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Episode 2 - EXAMPLE -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-beer-amber">
+                <div class="p-6 md:p-8">
+                    <div class="mb-4">
+                        <h2 class="text-2xl md:text-3xl font-bold text-pub-brown mb-2">Another Episode Title</h2>
+                        <p class="text-pub-medium italic">December 16, 2024</p>
+                    </div>
+                    
+                    <p class="text-lg mb-6 leading-relaxed">Another episode description. Copy this structure for each new episode you want to add.</p>
+                    
+                    <!-- YouTube Embed -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-pub-medium mb-3">Watch on YouTube</h3>
+                        <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
+                            <iframe class="absolute top-0 left-0 w-full h-full" 
+                                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Spotify Embed -->
+                    <div>
+                        <h3 class="text-xl font-bold text-pub-medium mb-3">Listen on Spotify</h3>
+                        <div class="rounded-xl overflow-hidden">
+                            <iframe class="w-full h-[152px]" 
+                                    src="https://open.spotify.com/embed/episode/EPISODE_ID" 
+                                    frameborder="0" 
+                                    allowtransparency="true" 
+                                    allow="encrypted-media">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more episodes by copying the episode div structure above -->
+
+        </div>
+    </section>
+
+    <!-- Subscribe CTA -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-beer-amber to-beer-gold text-pub-dark text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Never Miss an Episode</h2>
+            <p class="text-xl mb-8">Subscribe to get notified when new episodes drop</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="YOUR_YOUTUBE_LINK" target="_blank" class="bg-pub-dark hover:bg-pub-brown text-cream font-semibold px-8 py-3 rounded-lg text-lg transition-all transform hover:-translate-y-1">Subscribe on YouTube</a>
+                <a href="YOUR_SPOTIFY_LINK" target="_blank" class="bg-transparent border-2 border-pub-dark hover:bg-pub-dark text-pub-dark hover:text-cream font-semibold px-8 py-3 rounded-lg text-lg transition-all">Follow on Spotify</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pub-dark text-cream py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="logo.png" alt="The Jeremy Lincoln Show" class="w-20 mb-4">
+                    <p class="text-sm">© 2024 The Jeremy Lincoln Show</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <h4 class="text-beer-gold font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-beer-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-beer-gold transition-colors">About</a></li>
+                        <li><a href="episodes.html" class="hover:text-beer-gold transition-colors">Episodes</a></li>
+                        <li><a href="contact.html" class="hover:text-beer-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="text-center md:text-left">
+                    <h4 class="text-beer-gold font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <a href="YOUR_YOUTUBE_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">YT</a>
+                        <a href="YOUR_SPOTIFY_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">SP</a>
+                        <a href="YOUR_INSTAGRAM_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">IG</a>
+                        <a href="YOUR_TIKTOK_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">TT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

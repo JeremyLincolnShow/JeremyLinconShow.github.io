@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Jeremy Lincoln Show</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pub-dark': '#2C1810',
+                        'pub-brown': '#3E2723',
+                        'pub-medium': '#5D4037',
+                        'beer-amber': '#F9A825',
+                        'beer-gold': '#FDD835',
+                        'cream': '#FFF8E1',
+                        'off-white': '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="bg-cream">
+    <!-- Navigation -->
+    <nav class="bg-pub-dark sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="The Jeremy Lincoln Show" class="h-12 w-auto">
+                    <span class="text-cream text-xl font-semibold hidden sm:block">The Jeremy Lincoln Show</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors border-b-2 border-beer-gold">About</a></li>
+                    <li><a href="episodes.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors">Episodes</a></li>
+                    <li><a href="contact.html" class="text-cream hover:text-beer-gold px-3 py-2 rounded-md text-lg font-medium transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden hamburger flex flex-col space-y-1.5 p-2">
+                    <span class="block w-8 h-0.5 bg-cream"></span>
+                    <span class="block w-8 h-0.5 bg-cream"></span>
+                    <span class="block w-8 h-0.5 bg-cream"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden nav-menu hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-pub-dark">
+                <a href="index.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium border-l-4 border-beer-gold">About</a>
+                <a href="episodes.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium">Episodes</a>
+                <a href="contact.html" class="block text-cream hover:bg-pub-medium px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="bg-gradient-to-br from-pub-medium to-pub-brown py-16 text-center text-cream">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About The Show</h1>
+            <p class="text-xl text-beer-gold italic">Conversations over craft. Stories behind the brew.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Logo -->
+                <div class="flex justify-center md:justify-start">
+                    <img src="logo.png" alt="The Jeremy Lincoln Show" class="w-64 rounded-lg shadow-xl">
+                </div>
+                
+                <!-- Content -->
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold text-pub-brown mb-6">Welcome to The Jeremy Lincoln Show</h2>
+                    
+                    <p class="text-lg mb-6 leading-relaxed">Ever wonder what separates a garage homebrewer from a professional craft brewery owner? I'm Jeremy Lincoln, a passionate homebrewer, DIYer, and storyteller who loves exploring the world of craft beer and the people who make it happen.</p>
+                    
+                    <p class="text-lg mb-6 leading-relaxed">Each episode dives into homebrewing tips, craft beer stories, and interviews with brewers, makers, and beer enthusiasts chasing their passion. Whether you're brewing in your garage, running a small brewery, or just love hearing how great beer comes to life, you'll find something here to inspire you.</p>
+                    
+                    <h3 class="text-2xl font-bold text-pub-brown mb-4 mt-8">Topics We Explore:</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Homebrewing techniques</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Professional brewing</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Equipment reviews</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Brewing science</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Hop farming & malt production</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Craft beer business</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Recipe development</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded">Beer styles & sensory evaluation</div>
+                        <div class="bg-off-white border-l-4 border-beer-amber p-3 rounded sm:col-span-2">Community & clubs</div>
+                    </div>
+                    
+                    <p class="text-lg italic text-pub-medium border-t-2 border-beer-amber pt-6 mt-6">Whether you're brewing your first batch, running a brewery, or just love craft beer stories - you'll find your people here. Pull up a chair, crack a cold one, and subscribe for weekly episodes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-beer-amber to-beer-gold text-pub-dark text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Join the Community?</h2>
+            <p class="text-xl mb-8">Subscribe now and never miss an episode</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="YOUR_YOUTUBE_LINK" target="_blank" class="bg-pub-dark hover:bg-pub-brown text-cream font-semibold px-8 py-3 rounded-lg text-lg transition-all transform hover:-translate-y-1">Subscribe on YouTube</a>
+                <a href="YOUR_SPOTIFY_LINK" target="_blank" class="bg-transparent border-2 border-pub-dark hover:bg-pub-dark text-pub-dark hover:text-cream font-semibold px-8 py-3 rounded-lg text-lg transition-all">Follow on Spotify</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pub-dark text-cream py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="logo.png" alt="The Jeremy Lincoln Show" class="w-20 mb-4">
+                    <p class="text-sm">© 2024 The Jeremy Lincoln Show</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <h4 class="text-beer-gold font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-beer-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-beer-gold transition-colors">About</a></li>
+                        <li><a href="episodes.html" class="hover:text-beer-gold transition-colors">Episodes</a></li>
+                        <li><a href="contact.html" class="hover:text-beer-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="text-center md:text-left">
+                    <h4 class="text-beer-gold font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <a href="YOUR_YOUTUBE_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">YT</a>
+                        <a href="YOUR_SPOTIFY_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">SP</a>
+                        <a href="YOUR_INSTAGRAM_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">IG</a>
+                        <a href="YOUR_TIKTOK_LINK" target="_blank" class="w-10 h-10 bg-pub-medium hover:bg-beer-amber text-center leading-10 rounded transition-all transform hover:-translate-y-1">TT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
